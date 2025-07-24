@@ -1,0 +1,10 @@
+{
+  "name": "hugo-site",
+  "image": "mcr.microsoft.com/devcontainers/universal",
+  "features": {},
+  "customizations": {
+    "vscode": {
+      "extensions": ["yzhang.markdown-all-in-one", "esbenp.prettier-vscode"]
+    }
+  }
+}
