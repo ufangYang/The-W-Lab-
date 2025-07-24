@@ -14,7 +14,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v3
 
       - name: Setup Hugo
@@ -23,11 +23,11 @@ jobs:
           hugo-version: '0.115.4'
           extended: true
 
-      - name: Build
+      - name: Build site
         run: hugo --minify
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v2
         with:
           path: ./public
 
